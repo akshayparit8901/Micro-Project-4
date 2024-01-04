@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    background-color: #3B4664;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+input{
+width: 24rem;
+height: 6rem;
+border-radius: 12px;
+text-align: end;
+outline: none;
+background-color: #181F32;
+font-family: Segoe UI;
+font-size: 55px;
+font-weight: 700;
+line-height: 73px;
+text-align: right;
+color: aliceblue;
+border-color: #181F32;
+padding-right: 2rem;
+}
+.bottom{
+    width: 24rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius:12px;;
+    background-color: #252D44;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+button{
+/* width: 4.5rem; */
+color: #3B4664;
+height: 3rem;
+border-radius: 12px;
+font-family: Inter;
+font-size: 30px;
+font-weight: bold;
+line-height: 36px;
+letter-spacing: 0em;
+/* text-align: center; */
+background-color: #EAE3DB;
+margin: 0.5rem;
+border-color: #EAE3DB;
+cursor: pointer;
+}
+#reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+#reset, #del{
+    background-color: #647299;
+    color: white;
+    border-color: #647299;
+} 
+
+@media only screen and (max-width:450px){
+    input{
+        width: 15rem;
+        height: 4rem;
+        font-size: 40px;
+        }
+
+        .bottom{
+            width: 15rem;
+            grid-template-columns: auto auto auto;
+
+        }
+
+        button{
+            height: 2.5rem;
+            font-size: 20px;
+            }
+}

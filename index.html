@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="top">
+            <input type="text" id="inp" placeholder="0">
+        </div>
+        <div class="bottom">
+            <button id="7" onclick="btn_click(this.id)">7</button>
+            <button id="8" onclick="btn_click(this.id)">8</button>
+            <button id="9" onclick="btn_click(this.id)">9</button>
+            <button id="del" onclick="btn_click(this.id)">DEL</button>
+            <button id="4" onclick="btn_click(this.id)">4</button>
+            <button id="5" onclick="btn_click(this.id)">5</button>
+            <button id="6" onclick="btn_click(this.id)">6</button>
+            <button id="+" onclick="btn_click(this.id)">+</button>
+            <button id="1" onclick="btn_click(this.id)">1</button>
+            <button id="2" onclick="btn_click(this.id)">2</button>
+            <button id="3" onclick="btn_click(this.id)">3</button>
+            <button id="-" onclick="btn_click(this.id)">-</button>
+            <button id="." onclick="btn_click(this.id)">.</button>
+            <button id="0" onclick="btn_click(this.id)">0</button>
+            <button id="/" onclick="btn_click(this.id)">/</button>
+            <button id="*" onclick="btn_click(this.id)">*</button>
+            <button id="reset" onclick="btn_click(this.id)">RESET</button>
+            <button id="equal" onclick="btn_click(this.id)" >=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
